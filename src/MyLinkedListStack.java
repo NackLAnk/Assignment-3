@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.EmptyStackException;
 public class MyLinkedListStack<E> {
     private LinkedList<E> stack; // instance variable of type LinkedList
 
@@ -10,5 +11,14 @@ public class MyLinkedListStack<E> {
     }
     public void push(E element) {
         stack.addFirst(element);
+    }
+    public E peek() {
+        if (ifIsEmpty()) {
+            throw new EmptyStackException();
+        }
+        return stack.getFirst();
+    }
+    public boolean ifIsEmpty() {
+        return stack.isEmpty();
     }
 }
