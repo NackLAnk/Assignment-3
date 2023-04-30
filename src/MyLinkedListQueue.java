@@ -1,7 +1,7 @@
 import java.util.NoSuchElementException;
 import java.util.LinkedList;
 
-
+// A queue implementation using a LinkedList as the underlying data structure.
 public class MyLinkedListQueue<T> {
     private LinkedList<T> queue;
     // Creates a new, empty queue.
