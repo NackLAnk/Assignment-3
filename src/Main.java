@@ -15,15 +15,15 @@ public class Main {
 
             stack.push("You!"); // add "You!" to the stack
 
-            System.out.println(stack.peek()); // Output: "You!", print the top element of the stack
+            System.out.println("peek: " + stack.peek()); // Output: "You!", print the top element of the stack
 
             stack.pop(); // remove the top element of the stack
 
-            System.out.println(stack.peek()); // Output: "Hello", print the new top element of the stack
+            System.out.println("peek: " + stack.peek()); // Output: "Hello", print the new top element of the stack
 
-            System.out.println(stack.ifIsEmpty()); // Output: false, check if the stack is empty
+            System.out.println("isEmpty: " + stack.ifIsEmpty()); // Output: false, check if the stack is empty
 
-            System.out.println(stack.size()); // Output: 1, print the size of the stack
+            System.out.println("size: " + stack.size()); // Output: 1, print the size of the stack
 
             case 2:
                 MyLinkedListQueue<String> queue = new MyLinkedListQueue<>();
@@ -33,9 +33,13 @@ public class Main {
 
                 System.out.println("peek: " + queue.peek()); // Output: Front of queue: Alice
 
-                System.out.println("Removed: " + queue.dequeue()); // Output: Removed from queue: Alice
+                System.out.println("size: " + queue.size()); // Output: Queue size: 2
+
+                System.out.println("removed: " + queue.dequeue()); // Output: Removed from queue: Alice
 
                 System.out.println("peek: " + queue.peek()); // Output: Front of queue: Bob
+
+                System.out.println("size: " + queue.size()); // Output: Queue size: 1
 
                 break;
         }
