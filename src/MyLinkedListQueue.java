@@ -12,5 +12,16 @@ public class MyLinkedListQueue<T> {
     public void enqueue(T element) {
         queue.addLast(element);
     }
+    // Removes and returns the front element of the queue.
+    public T dequeue() {
+        if (ifIsEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return queue.removeFirst();
+    }
+    // Returns true if the queue is empty, false otherwise.
+    public boolean ifIsEmpty() {
+        return queue.isEmpty();
+    }
 
 }
