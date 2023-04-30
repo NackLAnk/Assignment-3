@@ -24,4 +24,10 @@ public class MyLinkedListStack<E> {
     public int size() {
         return stack.size();
     }
+    public E pop() {
+        if (ifIsEmpty()) {
+            throw new EmptyStackException();
+        }
+        return stack.removeFirst();
+    }
 }
