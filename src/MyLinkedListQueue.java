@@ -26,4 +26,10 @@ public class MyLinkedListQueue<T> {
     public int size() {
         return queue.size();
     }
+    public T peek() {
+        if (ifIsEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return queue.getFirst();
+    }
 }
