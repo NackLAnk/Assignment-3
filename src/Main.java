@@ -28,8 +28,8 @@ public class Main {
             case 2:
                 MyLinkedListQueue<String> queue = new MyLinkedListQueue<>();
 
-                queue.enqueue("Alice");
-                queue.enqueue("Bob");
+                queue.enqueue("Alice"); // Added Alice
+                queue.enqueue("Bob"); // Added Bob
 
                 System.out.println("peek: " + queue.peek()); // Output: Front of queue: Alice
 
