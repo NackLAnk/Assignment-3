@@ -27,6 +27,7 @@ public class MyLinkedListQueue<T> {
     public int size() {
         return queue.size();
     }
+    // Returns the front element of the queue without removing it.
     public T peek() {
         if (ifIsEmpty()) {
             throw new NoSuchElementException();
