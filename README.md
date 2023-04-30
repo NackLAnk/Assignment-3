@@ -32,3 +32,47 @@ MyLinkedListStack<String> stack = new MyLinkedListStack<>();
 
             System.out.println("size: " + stack.size()); // Output: 1, print the size of the stack
 ```
+
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=MyLinkedListQueue)](https://git.io/typing-svg)
+
+### Methods
+
+1. `enqueue(T element)`: Adds the specified element to the back of the queue.
+2. `dequeue()`: Removes and returns the front element of the queue.
+3. `ifIsEmpty()`: Checks if the queue is empty.
+4. `size()`: Returns the number of elements in the queue.
+5. `peek()`: Returns the front element of the queue without removing it.
+
+### How It Works
+* The `MyLinkedListQueue` class uses a `LinkedList` instance variable to implement the queue. The `enqueue` method adds elements to the back of the queue by calling the `addLast` method of the `LinkedList` class. The `dequeue` method removes and returns the front element of the queue by calling the `removeFirst` method of the `LinkedList` class. The `ifIsEmpty` method checks if the queue is empty by calling the `isEmpty` method of the `LinkedList` class. The `size` method returns the number of elements in the queue by calling the `size` method of the `LinkedList` class. The `peek` method returns the front element of the queue without removing it by calling the `getFirst` method of the `LinkedList` class.
+
+### Usage
+
+``` java
+MyLinkedListQueue<String> queue = new MyLinkedListQueue<>();
+
+                queue.enqueue("Alice"); // Added Alice
+                queue.enqueue("Bob"); // Added Bob
+
+                System.out.println("peek: " + queue.peek()); // Output: Front of queue: Alice
+
+                System.out.println("size: " + queue.size()); // Output: Queue size: 2
+
+                System.out.println("removed: " + queue.dequeue()); // Output: Removed from queue: Alice
+
+                System.out.println("peek: " + queue.peek()); // Output: Front of queue: Bob
+
+                System.out.println("size: " + queue.size()); // Output: Queue size: 1
+
+                queue.enqueue("Alibek");
+
+                System.out.println("size: " + queue.size()); // Output: Queue size: 2
+
+                // Remove all elements from the queue.
+                while (!queue.ifIsEmpty()) {
+                    System.out.println("removed: " + queue.dequeue());
+                }
+                // Output:
+                // Removed from queue: Bob
+                // Removed from queue: Alibek
+```
