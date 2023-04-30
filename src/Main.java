@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); // Scanner for choosing an option
 
-        System.out.print("choose an option(1 = MyLinkedListStack, 2 = Soon): ");
+        System.out.print("choose an option(1 = MyLinkedListStack, 2 = MyLinkedListQueue): ");
         int USER_ANS = scanner.nextInt(); // Users answer
 
         switch (USER_ANS) {
@@ -24,6 +24,8 @@ public class Main {
             System.out.println("isEmpty: " + stack.ifIsEmpty()); // Output: false, check if the stack is empty
 
             System.out.println("size: " + stack.size()); // Output: 1, print the size of the stack
+
+                break;
 
             case 2:
                 MyLinkedListQueue<String> queue = new MyLinkedListQueue<>();
@@ -54,6 +56,8 @@ public class Main {
                 // Removed from queue: Alibek
 
                 break;
+            default:
+                System.err.print("Wrong Answer, you need to write 1(MyLinkedListStack) or 2(MyLinkedListQueue)");
         }
     }
 }
