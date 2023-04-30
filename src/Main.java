@@ -21,6 +21,8 @@ public class Main {
 
             System.out.println(stack.peek()); // Output: "Hello", print the new top element of the stack
 
+            System.out.println(stack.ifIsEmpty()); // Output: false, check if the stack is empty
+
             case 2: break;
         }
     }
