@@ -25,7 +25,15 @@ public class Main {
 
             System.out.println(stack.size()); // Output: 1, print the size of the stack
 
-            case 2: break;
+            case 2:
+                MyLinkedListQueue<String> queue = new MyLinkedListQueue<>();
+
+                queue.enqueue("Alice");
+
+                System.out.println(queue.peek()); // Output: Front of queue: Alice
+
+
+                break;
         }
     }
 }
