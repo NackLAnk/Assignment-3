@@ -13,7 +13,7 @@ public class Main {
 
             stack.push("Hello"); // add "Hello" to the stack
 
-            stack.push("You!"); // add "world" to the stack
+            stack.push("You!"); // add "You!" to the stack
 
             System.out.println(stack.peek()); // Output: "You!", print the top element of the stack
 
