@@ -23,6 +23,7 @@ public class MyLinkedListQueue<T> {
     public boolean ifIsEmpty() {
         return queue.isEmpty();
     }
+    // Returns the number of elements in the queue.
     public int size() {
         return queue.size();
     }
