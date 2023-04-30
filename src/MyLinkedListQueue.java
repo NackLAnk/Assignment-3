@@ -8,4 +8,9 @@ public class MyLinkedListQueue<T> {
     public MyLinkedListQueue() {
         queue = new LinkedList<>();
     }
+    // Adds an element to the back of the queue.
+    public void enqueue(T element) {
+        queue.addLast(element);
+    }
+
 }
