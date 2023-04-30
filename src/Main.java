@@ -41,6 +41,18 @@ public class Main {
 
                 System.out.println("size: " + queue.size()); // Output: Queue size: 1
 
+                queue.enqueue("Alibek");
+
+                System.out.println("size: " + queue.size()); // Output: Queue size: 2
+
+                // Remove all elements from the queue.
+                while (!queue.ifIsEmpty()) {
+                    System.out.println("removed: " + queue.dequeue());
+                }
+                // Output:
+                // Removed from queue: Bob
+                // Removed from queue: Alibek
+
                 break;
         }
     }
