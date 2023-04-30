@@ -23,6 +23,8 @@ public class Main {
 
             System.out.println(stack.ifIsEmpty()); // Output: false, check if the stack is empty
 
+            System.out.println(stack.size()); // Output: 1, print the size of the stack
+
             case 2: break;
         }
     }
