@@ -29,9 +29,13 @@ public class Main {
                 MyLinkedListQueue<String> queue = new MyLinkedListQueue<>();
 
                 queue.enqueue("Alice");
+                queue.enqueue("Bob");
 
-                System.out.println(queue.peek()); // Output: Front of queue: Alice
+                System.out.println("peek: " + queue.peek()); // Output: Front of queue: Alice
 
+                System.out.println("Removed: " + queue.dequeue()); // Output: Removed from queue: Alice
+
+                System.out.println("peek: " + queue.peek()); // Output: Front of queue: Bob
 
                 break;
         }
